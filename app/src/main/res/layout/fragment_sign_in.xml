@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:background="@color/cardview_dark_background"
     android:backgroundTint="#ECDF73"
-    tools:context="views.fragments.SignInFragment">
+    tools:context=".views.fragments.SignInFragment">
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/hello_blank_fragment"
         android:gravity="center"
+        android:text="This is sign in Fragment"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
