@@ -1,11 +1,13 @@
 package com.example.pruebaproyecto.views.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.pruebaproyecto.R
+import com.example.pruebaproyecto.views.activity.DetaildActivity
 
 class SignInFragment : Fragment(R.layout.fragment_sign_in) {
 
@@ -18,10 +20,10 @@ class SignInFragment : Fragment(R.layout.fragment_sign_in) {
 
         signInButton.setOnClickListener {
 
-            val action = SignInFragmentDirections.actionSignInFragmentToMainPageFragment()
-
-            findNavController().navigate(action)
-
+            requireActivity().run {
+                startActivity(Intent(this, DetaildActivity::class.java))
+            }
+            //findNavController().navigate(action)
         }
 
 

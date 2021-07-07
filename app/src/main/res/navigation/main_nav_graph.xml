@@ -5,17 +5,8 @@
     android:id="@+id/main_nav_graph"
     app:startDestination="@id/signInFragment">
     <fragment
-        android:id="@+id/mainPageFragment"
-        android:name="com.example.pruebaproyecto.views.fragments.MainPageFragment"
-        android:label="fragment_main_page"
-        tools:layout="@layout/fragment_main_page" />
-    <fragment
         android:id="@+id/signInFragment"
         android:name="com.example.pruebaproyecto.views.fragments.SignInFragment"
         android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in">
-        <action
-            android:id="@+id/action_signInFragment_to_mainPageFragment"
-            app:destination="@id/mainPageFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_sign_in"/>
 </navigation>
