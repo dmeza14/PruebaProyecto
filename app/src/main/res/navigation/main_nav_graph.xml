@@ -3,10 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/signInFragment2">
+    app:startDestination="@id/signInFragment">
     <fragment
-        android:id="@+id/signInFragment2"
+        android:id="@+id/mainPageFragment"
+        android:name="com.example.pruebaproyecto.views.fragments.MainPageFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" />
+    <fragment
+        android:id="@+id/signInFragment"
         android:name="com.example.pruebaproyecto.views.fragments.SignInFragment"
         android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" />
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_mainPageFragment"
+            app:destination="@id/mainPageFragment" />
+    </fragment>
 </navigation>
